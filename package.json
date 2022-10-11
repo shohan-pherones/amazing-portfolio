@@ -1,0 +1,17 @@
+{
+  "name": "amazing-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "scripts": {
+    "start": "parcel ./src/index.html --open",
+    "build": "parcel build ./src/index.html"
+  },
+  "author": "Md. Shohanur Rahman",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "gsap": "^3.11.3"
+  }
+}

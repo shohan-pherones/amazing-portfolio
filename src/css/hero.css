@@ -1,0 +1,41 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: var(--border-sm);
+}
+
+.hero--img--wrapper {
+  width: 720px;
+}
+
+.hero--heading {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  font-family: "Kanit", sans-serif;
+  font-size: 12rem;
+  letter-spacing: 3px;
+  line-height: 1;
+  color: var(--color-primary);
+  mix-blend-mode: difference;
+}
+
+.hero--bio {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  width: 40%;
+  mix-blend-mode: difference;
+}
+
+.hero--link {
+  position: absolute;
+  top: 80%;
+  right: 50%;
+  transform: translate(50%, 0);
+}
