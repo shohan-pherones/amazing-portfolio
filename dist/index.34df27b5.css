@@ -6,8 +6,6 @@
   --color-light: #fafafa;
   --transition: all .5s ease-in-out;
   --border-rad-pill: 100px;
-  --border-rad-md: 20px;
-  --border-rad-sm: 10px;
   --border-sm: 1px solid #fafafa1a;
 }
 
@@ -63,6 +61,7 @@ body {
 }
 
 .section--padding {
+  border-bottom: var(--border-sm);
   padding: 20rem 0;
 }
 
@@ -103,6 +102,11 @@ img {
 .logo h2 {
   font-size: 2.5rem;
   font-weight: 400;
+}
+
+ion-icon {
+  height: 5px;
+  width: 5px;
 }
 
 /*# sourceMappingURL=index.34df27b5.css.map */

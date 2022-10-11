@@ -7,8 +7,6 @@
   --color-light: #fafafa;
   --transition: all 0.5s ease-in-out;
   --border-rad-pill: 100px;
-  --border-rad-md: 20px;
-  --border-rad-sm: 10px;
   --border-sm: 1px solid rgba(250, 250, 250, 0.1);
 }
 
@@ -67,6 +65,7 @@ body {
 
 .section--padding {
   padding: 20rem 0;
+  border-bottom: var(--border-sm);
 }
 
 .section--title {
@@ -108,4 +107,9 @@ img {
 .logo h2 {
   font-size: 2.5rem;
   font-weight: 400;
+}
+
+ion-icon {
+  height: 5px;
+  width: 5px;
 }

@@ -1,0 +1,41 @@
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.skills--l,
+.skills--r {
+  padding: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills--l hr,
+.skills--r hr {
+  border-color: var(--color-primary);
+  width: 40%;
+}
+
+.skills--set-title {
+  font-size: 5rem;
+  color: var(--color-primary);
+}
+
+.skills--set--list {
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.skills--set--list li {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.skills--set--list li:hover {
+  color: var(--color-primary);
+  transform: translateY(3px);
+}

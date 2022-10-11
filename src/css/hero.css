@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  border-bottom: var(--border-sm);
 }
 
 .hero--img--wrapper {
