@@ -89,4 +89,34 @@
   }
 }
 
+@media screen and (max-width: 588px) {
+  .hero--heading {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .hero--heading {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero--heading {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hero--heading {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .hero--heading {
+    font-size: 4rem;
+  }
+}
+
 /*# sourceMappingURL=index.f0d09482.css.map */

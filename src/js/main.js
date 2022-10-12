@@ -17,11 +17,19 @@ class App {
   }
 
   _socialsAnime() {
+    gsap.from(".socials", {
+      x: "-100%",
+      opacity: 0,
+      duration: 1,
+      delay: 2,
+      ease: "sine",
+    });
+
     gsap.from(".social--one", {
       scale: 0,
       opacity: 0,
       duration: 1,
-      delay: 2,
+      delay: 3,
       ease: "elastic",
     });
 
@@ -29,7 +37,7 @@ class App {
       scale: 0,
       opacity: 0,
       duration: 1.5,
-      delay: 2,
+      delay: 3,
       ease: "elastic",
     });
 
@@ -37,7 +45,7 @@ class App {
       scale: 0,
       opacity: 0,
       duration: 2,
-      delay: 2,
+      delay: 3,
       ease: "elastic",
     });
 
@@ -45,7 +53,7 @@ class App {
       scale: 0,
       opacity: 0,
       duration: 2.5,
-      delay: 2,
+      delay: 3,
       ease: "elastic",
     });
   }

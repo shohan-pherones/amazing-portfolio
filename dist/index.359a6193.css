@@ -40,4 +40,10 @@
   }
 }
 
+@media screen and (max-width: 385px) {
+  .about--r {
+    padding: 2rem;
+  }
+}
+
 /*# sourceMappingURL=index.359a6193.css.map */

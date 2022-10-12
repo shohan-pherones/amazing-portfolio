@@ -73,3 +73,13 @@ hr {
     order: 2;
   }
 }
+
+@media screen and (max-width: 385px) {
+  .project--r {
+    padding: 2rem;
+  }
+
+  .project--links {
+    flex-direction: column;
+  }
+}

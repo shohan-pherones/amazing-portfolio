@@ -551,32 +551,39 @@ class App {
         this._copyrightYear();
     }
     _socialsAnime() {
+        (0, _gsapDefault.default).from(".socials", {
+            x: "-100%",
+            opacity: 0,
+            duration: 1,
+            delay: 2,
+            ease: "sine"
+        });
         (0, _gsapDefault.default).from(".social--one", {
             scale: 0,
             opacity: 0,
             duration: 1,
-            delay: 2,
+            delay: 3,
             ease: "elastic"
         });
         (0, _gsapDefault.default).from(".social--two", {
             scale: 0,
             opacity: 0,
             duration: 1.5,
-            delay: 2,
+            delay: 3,
             ease: "elastic"
         });
         (0, _gsapDefault.default).from(".social--three", {
             scale: 0,
             opacity: 0,
             duration: 2,
-            delay: 2,
+            delay: 3,
             ease: "elastic"
         });
         (0, _gsapDefault.default).from(".social--four", {
             scale: 0,
             opacity: 0,
             duration: 2.5,
-            delay: 2,
+            delay: 3,
             ease: "elastic"
         });
     }

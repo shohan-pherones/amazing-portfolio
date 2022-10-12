@@ -106,12 +106,18 @@ img {
 
 .socials {
   z-index: 100;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: #0003;
+  border-radius: 5px;
   flex-direction: column;
   gap: 1rem;
+  padding: 2rem;
   display: flex;
   position: fixed;
-  top: 58%;
-  left: 5rem;
+  top: 50%;
+  left: 2%;
 }
 
 .socials a {
@@ -145,10 +151,11 @@ img {
   .section--title {
     margin-bottom: 5rem;
   }
+}
 
-  .socials {
-    top: 50%;
-    left: 3.5rem;
+@media screen and (max-width: 475px) {
+  .footer {
+    font-size: 2rem;
   }
 }
 
