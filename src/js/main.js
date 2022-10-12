@@ -10,6 +10,7 @@ class App {
     this._projectsAnime();
     this._skillsAnime();
     this._aboutAnime();
+    this._contactAnime();
   }
 
   _navAnime() {
@@ -335,6 +336,32 @@ class App {
       ease: "sine",
       scrollTrigger: {
         trigger: ".about--r",
+        start: "top 60%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
+  }
+
+  _contactAnime() {
+    gsap.from(".title--four", {
+      x: "-100%",
+      opacity: 0,
+      duration: 1,
+      ease: "sine",
+      scrollTrigger: {
+        trigger: ".title--four",
+        start: "top 90%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
+
+    gsap.from(".contact", {
+      y: "100%",
+      opacity: 0,
+      duration: 2,
+      ease: "elastic",
+      scrollTrigger: {
+        trigger: ".contact",
         start: "top 60%",
         toggleActions: "play reverse play reverse",
       },

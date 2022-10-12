@@ -1,0 +1,11 @@
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact a {
+  color: var(--color-primary);
+  font-size: 5rem;
+  letter-spacing: 5px;
+  border-bottom: 2px solid var(--color-primary);
+}

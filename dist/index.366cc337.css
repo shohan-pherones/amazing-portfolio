@@ -1,0 +1,13 @@
+.contact {
+  justify-content: center;
+  display: flex;
+}
+
+.contact a {
+  color: var(--color-primary);
+  letter-spacing: 5px;
+  border-bottom: 2px solid var(--color-primary);
+  font-size: 5rem;
+}
+
+/*# sourceMappingURL=index.366cc337.css.map */
