@@ -109,4 +109,20 @@ ion-icon {
   width: 5px;
 }
 
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section--padding {
+    padding: 10rem 0;
+  }
+
+  .section--title {
+    margin-bottom: 5rem;
+  }
+}
+
 /*# sourceMappingURL=index.34df27b5.css.map */

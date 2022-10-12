@@ -38,3 +38,59 @@
   right: 50%;
   transform: translate(50%, 0);
 }
+
+@media screen and (max-width: 900px) {
+  .hero--heading {
+    font-size: 10rem;
+  }
+
+  .hero--heading,
+  .hero--bio,
+  .hero--link {
+    position: static;
+  }
+
+  .hero--bio {
+    width: 80%;
+  }
+
+  .hero--link {
+    transform: translate(-0%, 0);
+  }
+
+  .hero--img--wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero--heading {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero--heading {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .hero--heading {
+    font-size: 5rem;
+  }
+
+  .hero--bio {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .hero--heading {
+    font-size: 4rem;
+  }
+}
