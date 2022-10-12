@@ -544,6 +544,7 @@ class App {
         this._heroAnime();
         this._projectsAnime();
         this._skillsAnime();
+        this._aboutAnime();
     }
     _navAnime() {
         (0, _gsapDefault.default).from(".navbar", {
@@ -805,6 +806,41 @@ class App {
             ease: "elastic",
             scrollTrigger: {
                 trigger: ".skills",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+    }
+    _aboutAnime() {
+        (0, _gsapDefault.default).from(".title--three", {
+            x: "-100%",
+            opacity: 0,
+            duration: 1,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".title--three",
+                start: "top 90%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".about--l", {
+            x: "-100%",
+            opacity: 0,
+            duration: 1,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".about--l",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".about--r", {
+            x: "100%",
+            opacity: 0,
+            duration: 1,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".about--r",
                 start: "top 60%",
                 toggleActions: "play reverse play reverse"
             }
