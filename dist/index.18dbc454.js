@@ -540,6 +540,7 @@ var _scrollTriggerDefault = parcelHelpers.interopDefault(_scrollTrigger);
 (0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
 class App {
     constructor(){
+        this._socialsAnime();
         this._navAnime();
         this._heroAnime();
         this._projectsAnime();
@@ -547,6 +548,37 @@ class App {
         this._aboutAnime();
         this._contactAnime();
         this._footerAnime();
+        this._copyrightYear();
+    }
+    _socialsAnime() {
+        (0, _gsapDefault.default).from(".social--one", {
+            scale: 0,
+            opacity: 0,
+            duration: 1,
+            delay: 2,
+            ease: "elastic"
+        });
+        (0, _gsapDefault.default).from(".social--two", {
+            scale: 0,
+            opacity: 0,
+            duration: 1.5,
+            delay: 2,
+            ease: "elastic"
+        });
+        (0, _gsapDefault.default).from(".social--three", {
+            scale: 0,
+            opacity: 0,
+            duration: 2,
+            delay: 2,
+            ease: "elastic"
+        });
+        (0, _gsapDefault.default).from(".social--four", {
+            scale: 0,
+            opacity: 0,
+            duration: 2.5,
+            delay: 2,
+            ease: "elastic"
+        });
     }
     _navAnime() {
         (0, _gsapDefault.default).from(".navbar", {
@@ -874,7 +906,7 @@ class App {
     }
     _footerAnime() {
         (0, _gsapDefault.default).from(".footer--text", {
-            y: "200%",
+            y: "-200%",
             opacity: 0,
             duration: 1,
             ease: "sine",
@@ -884,6 +916,11 @@ class App {
                 toggleActions: "play reverse play reverse"
             }
         });
+    }
+    _copyrightYear() {
+        const yearWrapper = document.querySelector(".year");
+        const year = new Date().getFullYear();
+        yearWrapper.textContent = year;
     }
 }
 const myApp = new App();
