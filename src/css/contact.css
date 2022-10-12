@@ -10,27 +10,8 @@
   border-bottom: 2px solid var(--color-primary);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .contact a {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contact a {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .contact a {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 332px) {
-  .contact a {
-    font-size: 1.5rem;
-    border-width: 1px;
+    font-size: 4rem;
   }
 }

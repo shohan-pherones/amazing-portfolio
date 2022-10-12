@@ -4,15 +4,6 @@
   gap: 0;
 }
 
-.about--l {
-  width: 100%;
-  height: 720px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .about--r {
   display: flex;
   flex-direction: column;
@@ -35,14 +26,16 @@
   background-color: var(--color-light);
 }
 
-@media screen and (max-width: 1200px) {
-  .about {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 1456px) {
+  .about--r {
+    font-size: 2.3rem;
+    gap: 2rem;
+    padding: 4rem;
   }
 }
 
-@media screen and (max-width: 465px) {
-  .about--r {
-    padding: 3rem;
+@media screen and (max-width: 1280px) {
+  .about {
+    grid-template-columns: 1fr;
   }
 }

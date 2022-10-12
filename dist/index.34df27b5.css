@@ -129,13 +129,15 @@ img {
   padding: 10rem 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 50%;
   }
-}
 
-@media screen and (max-width: 900px) {
+  .wrapper {
+    max-width: 90vw;
+  }
+
   .section--padding {
     padding: 10rem 0;
   }
@@ -143,11 +145,10 @@ img {
   .section--title {
     margin-bottom: 5rem;
   }
-}
 
-@media screen and (max-width: 465px) {
-  .wrapper {
-    max-width: 90vw;
+  .socials {
+    top: 50%;
+    left: 3.5rem;
   }
 }
 

@@ -4,15 +4,6 @@
   display: grid;
 }
 
-.about--l {
-  width: 100%;
-  height: 720px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  overflow: hidden;
-}
-
 .about--r {
   background-color: var(--color-primary);
   flex-direction: column;
@@ -35,15 +26,17 @@
   background-color: var(--color-light);
 }
 
-@media screen and (max-width: 1200px) {
-  .about {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 1456px) {
+  .about--r {
+    gap: 2rem;
+    padding: 4rem;
+    font-size: 2.3rem;
   }
 }
 
-@media screen and (max-width: 465px) {
-  .about--r {
-    padding: 3rem;
+@media screen and (max-width: 1280px) {
+  .about {
+    grid-template-columns: 1fr;
   }
 }
 
