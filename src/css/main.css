@@ -129,3 +129,9 @@ ion-icon {
     margin-bottom: 5rem;
   }
 }
+
+@media screen and (max-width: 465px) {
+  .wrapper {
+    max-width: 90vw;
+  }
+}

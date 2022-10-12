@@ -64,3 +64,23 @@ hr {
 .project--links .btn:hover {
   background-color: var(--color-light);
 }
+
+@media screen and (max-width: 1200px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .project:nth-child(2) .project--r {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .project--links {
+    flex-direction: column;
+  }
+
+  .project--r {
+    padding: 3rem;
+  }
+}

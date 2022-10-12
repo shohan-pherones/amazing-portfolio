@@ -125,4 +125,10 @@ ion-icon {
   }
 }
 
+@media screen and (max-width: 465px) {
+  .wrapper {
+    max-width: 90vw;
+  }
+}
+
 /*# sourceMappingURL=index.34df27b5.css.map */
