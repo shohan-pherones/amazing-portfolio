@@ -546,6 +546,7 @@ class App {
         this._skillsAnime();
         this._aboutAnime();
         this._contactAnime();
+        this._footerAnime();
     }
     _navAnime() {
         (0, _gsapDefault.default).from(".navbar", {
@@ -860,13 +861,26 @@ class App {
             }
         });
         (0, _gsapDefault.default).from(".contact", {
-            y: "100%",
+            y: "200%",
             opacity: 0,
-            duration: 2,
-            ease: "elastic",
+            duration: 1,
+            ease: "sine",
             scrollTrigger: {
                 trigger: ".contact",
-                start: "top 60%",
+                start: "top 80%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+    }
+    _footerAnime() {
+        (0, _gsapDefault.default).from(".footer--text", {
+            y: "200%",
+            opacity: 0,
+            duration: 1,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".footer",
+                start: "top 90%",
                 toggleActions: "play reverse play reverse"
             }
         });

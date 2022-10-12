@@ -109,9 +109,9 @@ img {
   font-weight: 400;
 }
 
-ion-icon {
-  height: 5px;
-  width: 5px;
+.footer.section--padding {
+  text-align: center;
+  padding: 10rem 0;
 }
 
 @media screen and (max-width: 1200px) {
