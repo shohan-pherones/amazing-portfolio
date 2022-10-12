@@ -8,7 +8,6 @@ class App {
     this._navAnime();
     this._heroAnime();
     this._projectsAnime();
-    this._skillsAnime();
   }
 
   _navAnime() {
@@ -150,92 +149,6 @@ class App {
       ease: "sine",
       scrollTrigger: {
         trigger: ".card--six",
-        start: "top 60%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-  }
-
-  _skillsAnime() {
-    gsap.from(".title--two", {
-      x: "-100%",
-      opacity: 0,
-      duration: 1,
-      ease: "sine",
-      scrollTrigger: {
-        trigger: ".title--two",
-        start: "top 90%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-
-    gsap.from(".skills--set-title--one", {
-      y: "-100%",
-      opacity: 0,
-      duration: 1,
-      ease: "sine",
-      scrollTrigger: {
-        trigger: ".skills--set-title--one",
-        start: "top 60%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-
-    gsap.from(".skills--set-title--two", {
-      y: "-100%",
-      opacity: 0,
-      duration: 1,
-      ease: "sine",
-      scrollTrigger: {
-        trigger: ".skills--set-title--one",
-        start: "top 60%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-
-    gsap.from(".skills--set-title--line--one", {
-      x: "-100%",
-      opacity: 0,
-      duration: 1,
-      ease: "sine",
-      scrollTrigger: {
-        trigger: ".skills--set-title--line--one",
-        start: "top 60%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-
-    gsap.from(".skills--set-title--line--two", {
-      x: "100%",
-      opacity: 0,
-      duration: 1,
-      ease: "sine",
-      scrollTrigger: {
-        trigger: ".skills--set-title--line--two",
-        start: "top 60%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-
-    gsap.from(".skills--set--list--one", {
-      x: "-100%",
-      opacity: 0,
-      duration: 1,
-      ease: "sine",
-      scrollTrigger: {
-        trigger: ".skills--set--list--one",
-        start: "top 60%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-
-    gsap.from(".skills--set--list--two", {
-      x: "100%",
-      opacity: 0,
-      duration: 1,
-      ease: "sine",
-      scrollTrigger: {
-        trigger: ".skills--set--list--two",
         start: "top 60%",
         toggleActions: "play reverse play reverse",
       },

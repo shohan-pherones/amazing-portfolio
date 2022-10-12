@@ -1,41 +1,33 @@
 .skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.skills--l,
-.skills--r {
-  padding: 5rem 10rem;
+.skill {
+  height: 15rem;
+  width: 15rem;
   display: flex;
   flex-direction: column;
-}
-
-.skills--l hr,
-.skills--r hr {
-  border-color: var(--color-primary);
-  width: 40%;
-}
-
-.skills--set-title {
-  font-size: 5rem;
-  color: var(--color-primary);
-}
-
-.skills--set--list {
-  padding: 0 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3px;
-}
-
-.skills--set--list li {
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  text-align: center;
+  font-weight: 500;
+  border-radius: 7px;
+  overflow: hidden;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s ease-in-out;
 }
 
-.skills--set--list li:hover {
-  color: var(--color-primary);
-  transform: translateY(3px);
+.skill:hover {
+  transform: translateY(-1rem);
+}
+
+.skill--img {
+  width: 50%;
 }
