@@ -21,11 +21,6 @@
   border-radius: 7px;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.skill:hover {
-  transform: translateY(-1rem);
 }
 
 .skill--img {

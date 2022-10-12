@@ -543,6 +543,7 @@ class App {
         this._navAnime();
         this._heroAnime();
         this._projectsAnime();
+        this._skillsAnime();
     }
     _navAnime() {
         (0, _gsapDefault.default).from(".navbar", {
@@ -670,6 +671,140 @@ class App {
             ease: "sine",
             scrollTrigger: {
                 trigger: ".card--six",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+    }
+    _skillsAnime() {
+        (0, _gsapDefault.default).from(".title--two", {
+            x: "-100%",
+            opacity: 0,
+            duration: 1,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".title--two",
+                start: "top 90%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".skill--one", {
+            scale: 0,
+            opacity: 0,
+            duration: 1,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".skills",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".skill--two", {
+            scale: 0,
+            opacity: 0,
+            duration: 1.25,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".skills",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".skill--three", {
+            scale: 0,
+            opacity: 0,
+            duration: 1.5,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".skills",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".skill--four", {
+            scale: 0,
+            opacity: 0,
+            duration: 1.75,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".skills",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".skill--five", {
+            scale: 0,
+            opacity: 0,
+            duration: 2,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".skills",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".skill--six", {
+            scale: 0,
+            opacity: 0,
+            duration: 2.25,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".skills",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".skill--seven", {
+            scale: 0,
+            opacity: 0,
+            duration: 2.5,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".skills",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".skill--eight", {
+            scale: 0,
+            opacity: 0,
+            duration: 2.75,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".skills",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".skill--nine", {
+            scale: 0,
+            opacity: 0,
+            duration: 3,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".skills",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".skill--ten", {
+            scale: 0,
+            opacity: 0,
+            duration: 3.25,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".skills",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".skill--eleven", {
+            scale: 0,
+            opacity: 0,
+            duration: 3.5,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".skills",
                 start: "top 60%",
                 toggleActions: "play reverse play reverse"
             }
