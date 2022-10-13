@@ -18,7 +18,7 @@ class App {
 
   _socialsAnime() {
     gsap.from(".socials", {
-      x: "-100%",
+      x: "100%",
       opacity: 0,
       duration: 1,
       delay: 2,

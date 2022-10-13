@@ -114,8 +114,8 @@ img {
   flex-direction: column;
   gap: 1rem;
   position: fixed;
-  top: 50%;
-  left: 2%;
+  top: 30%;
+  right: 2%;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);

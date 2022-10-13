@@ -116,8 +116,8 @@ img {
   padding: 2rem;
   display: flex;
   position: fixed;
-  top: 50%;
-  left: 2%;
+  top: 30%;
+  right: 2%;
 }
 
 .socials a {

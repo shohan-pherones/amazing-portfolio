@@ -552,7 +552,7 @@ class App {
     }
     _socialsAnime() {
         (0, _gsapDefault.default).from(".socials", {
-            x: "-100%",
+            x: "100%",
             opacity: 0,
             duration: 1,
             delay: 2,
