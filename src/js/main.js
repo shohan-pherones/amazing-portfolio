@@ -1,10 +1,12 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/src/ScrollTrigger";
+import Lenis from "@studio-freight/lenis";
 
 gsap.registerPlugin(ScrollTrigger);
 
 class App {
   constructor() {
+    this._smoothScrolling();
     this._socialsAnime();
     this._navAnime();
     this._heroAnime();
@@ -14,6 +16,22 @@ class App {
     this._contactAnime();
     this._footerAnime();
     this._copyrightYear();
+  }
+
+  _smoothScrolling() {
+    const lenis = new Lenis({
+      duration: 1.5,
+      easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+      direction: "vertical",
+      smooth: true,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
   }
 
   _socialsAnime() {
