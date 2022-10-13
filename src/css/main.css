@@ -59,6 +59,46 @@ body {
   overflow-x: hidden;
 }
 
+/* Splash screen */
+.intro {
+  position: fixed;
+  z-index: 1010;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-primary);
+  transition: 1s;
+}
+
+.logo--header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-light);
+}
+
+.intro--logo {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+
+.intro--logo.active {
+  bottom: 0;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.intro--logo.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+/* Custom cursor */
 .inner--cursor {
   position: fixed;
   left: 10px;
@@ -93,6 +133,7 @@ body {
   transition: 0.1s;
 }
 
+/* Common styles */
 .wrapper {
   max-width: 80vw;
   margin: 0 auto;

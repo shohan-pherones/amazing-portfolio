@@ -56,6 +56,44 @@ body {
   overflow-x: hidden;
 }
 
+.intro {
+  z-index: 1010;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-primary);
+  transition: all 1s;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo--header {
+  color: var(--color-light);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro--logo {
+  opacity: 0;
+  display: inline-block;
+  position: relative;
+  bottom: -20px;
+}
+
+.intro--logo.active {
+  opacity: 1;
+  transition: all .5s ease-in-out;
+  bottom: 0;
+}
+
+.intro--logo.fade {
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  bottom: 150px;
+}
+
 .inner--cursor {
   z-index: 1000;
   width: 10px;

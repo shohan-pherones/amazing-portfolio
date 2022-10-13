@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 class App {
   constructor() {
+    this._splashScreen();
     this._smoothScrolling();
     this._customCursor();
     this._socialsAnime();
@@ -17,6 +18,34 @@ class App {
     this._contactAnime();
     this._footerAnime();
     this._copyrightYear();
+  }
+
+  _splashScreen() {
+    let intro = document.querySelector(".intro");
+    let logoSpan = document.querySelectorAll(".intro--logo");
+
+    window.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        logoSpan.forEach((span, index) => {
+          setTimeout(() => {
+            span.classList.add("active");
+          }, (index + 1) * 400);
+        });
+
+        setTimeout(() => {
+          logoSpan.forEach((span, index) => {
+            setTimeout(() => {
+              span.classList.remove("active");
+              span.classList.add("fade");
+            }, (index + 1) * 50);
+          });
+        }, 2000);
+
+        setTimeout(() => {
+          intro.style.top = "-100vh";
+        }, 2300);
+      });
+    });
   }
 
   _smoothScrolling() {
@@ -68,7 +97,7 @@ class App {
       x: "100%",
       opacity: 0,
       duration: 1,
-      delay: 2,
+      delay: 5,
       ease: "sine",
     });
 
@@ -76,7 +105,7 @@ class App {
       scale: 0,
       opacity: 0,
       duration: 1,
-      delay: 3,
+      delay: 6,
       ease: "elastic",
     });
 
@@ -84,7 +113,7 @@ class App {
       scale: 0,
       opacity: 0,
       duration: 1.5,
-      delay: 3,
+      delay: 6,
       ease: "elastic",
     });
 
@@ -92,7 +121,7 @@ class App {
       scale: 0,
       opacity: 0,
       duration: 2,
-      delay: 3,
+      delay: 6,
       ease: "elastic",
     });
 
@@ -100,7 +129,7 @@ class App {
       scale: 0,
       opacity: 0,
       duration: 2.5,
-      delay: 3,
+      delay: 6,
       ease: "elastic",
     });
   }
@@ -110,6 +139,7 @@ class App {
       y: "-100%",
       opacity: 0,
       duration: 1,
+      delay: 3,
       ease: "sine",
     });
 
@@ -118,7 +148,7 @@ class App {
       opacity: 0,
       duration: 1,
       ease: "sine",
-      delay: 1,
+      delay: 4,
     });
 
     gsap.from(".github--link", {
@@ -126,7 +156,7 @@ class App {
       opacity: 0,
       duration: 1,
       ease: "sine",
-      delay: 1,
+      delay: 4,
     });
   }
 
@@ -136,7 +166,7 @@ class App {
       opacity: 0,
       duration: 2,
       ease: "sine",
-      delay: 1,
+      delay: 4,
     });
 
     gsap.from(".hero--heading", {
@@ -144,7 +174,7 @@ class App {
       opacity: 0,
       duration: 1,
       ease: "sine",
-      delay: 2,
+      delay: 5,
     });
 
     gsap.from(".hero--bio", {
@@ -152,7 +182,7 @@ class App {
       opacity: 0,
       duration: 1,
       ease: "sine",
-      delay: 2,
+      delay: 5,
     });
 
     gsap.from(".hero--link", {
@@ -160,7 +190,7 @@ class App {
       opacity: 0,
       duration: 0.5,
       ease: "sine",
-      delay: 3,
+      delay: 6,
     });
   }
 

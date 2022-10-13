@@ -542,6 +542,7 @@ var _lenisDefault = parcelHelpers.interopDefault(_lenis);
 (0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
 class App {
     constructor(){
+        this._splashScreen();
         this._smoothScrolling();
         this._customCursor();
         this._socialsAnime();
@@ -553,6 +554,30 @@ class App {
         this._contactAnime();
         this._footerAnime();
         this._copyrightYear();
+    }
+    _splashScreen() {
+        let intro = document.querySelector(".intro");
+        let logoSpan = document.querySelectorAll(".intro--logo");
+        window.addEventListener("DOMContentLoaded", ()=>{
+            setTimeout(()=>{
+                logoSpan.forEach((span, index)=>{
+                    setTimeout(()=>{
+                        span.classList.add("active");
+                    }, (index + 1) * 400);
+                });
+                setTimeout(()=>{
+                    logoSpan.forEach((span, index)=>{
+                        setTimeout(()=>{
+                            span.classList.remove("active");
+                            span.classList.add("fade");
+                        }, (index + 1) * 50);
+                    });
+                }, 2000);
+                setTimeout(()=>{
+                    intro.style.top = "-100vh";
+                }, 2300);
+            });
+        });
     }
     _smoothScrolling() {
         const lenis = new (0, _lenisDefault.default)({
@@ -594,35 +619,35 @@ class App {
             x: "100%",
             opacity: 0,
             duration: 1,
-            delay: 2,
+            delay: 5,
             ease: "sine"
         });
         (0, _gsapDefault.default).from(".social--one", {
             scale: 0,
             opacity: 0,
             duration: 1,
-            delay: 3,
+            delay: 6,
             ease: "elastic"
         });
         (0, _gsapDefault.default).from(".social--two", {
             scale: 0,
             opacity: 0,
             duration: 1.5,
-            delay: 3,
+            delay: 6,
             ease: "elastic"
         });
         (0, _gsapDefault.default).from(".social--three", {
             scale: 0,
             opacity: 0,
             duration: 2,
-            delay: 3,
+            delay: 6,
             ease: "elastic"
         });
         (0, _gsapDefault.default).from(".social--four", {
             scale: 0,
             opacity: 0,
             duration: 2.5,
-            delay: 3,
+            delay: 6,
             ease: "elastic"
         });
     }
@@ -631,6 +656,7 @@ class App {
             y: "-100%",
             opacity: 0,
             duration: 1,
+            delay: 3,
             ease: "sine"
         });
         (0, _gsapDefault.default).from(".logo", {
@@ -638,14 +664,14 @@ class App {
             opacity: 0,
             duration: 1,
             ease: "sine",
-            delay: 1
+            delay: 4
         });
         (0, _gsapDefault.default).from(".github--link", {
             x: "100%",
             opacity: 0,
             duration: 1,
             ease: "sine",
-            delay: 1
+            delay: 4
         });
     }
     _heroAnime() {
@@ -654,28 +680,28 @@ class App {
             opacity: 0,
             duration: 2,
             ease: "sine",
-            delay: 1
+            delay: 4
         });
         (0, _gsapDefault.default).from(".hero--heading", {
             x: "-100%",
             opacity: 0,
             duration: 1,
             ease: "sine",
-            delay: 2
+            delay: 5
         });
         (0, _gsapDefault.default).from(".hero--bio", {
             x: "100%",
             opacity: 0,
             duration: 1,
             ease: "sine",
-            delay: 2
+            delay: 5
         });
         (0, _gsapDefault.default).from(".hero--link", {
             y: "100%",
             opacity: 0,
             duration: 0.5,
             ease: "sine",
-            delay: 3
+            delay: 6
         });
     }
     _projectsAnime() {
