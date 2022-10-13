@@ -1,13 +1,35 @@
 .contact {
   justify-content: center;
+  gap: 2rem;
   display: flex;
 }
 
 .contact a {
   color: var(--color-primary);
   letter-spacing: 5px;
-  border-bottom: 2px solid var(--color-primary);
   font-size: 5rem;
+}
+
+.contact a:hover {
+  text-underline-offset: 1.2rem;
+  text-decoration: underline;
+}
+
+.nav-links {
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 10rem;
+  display: flex;
+}
+
+.nav-links a {
+  color: var(--color-primary);
+  align-self: flex-start;
+}
+
+.nav-links a:hover {
+  text-underline-offset: .5rem;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 840px) {

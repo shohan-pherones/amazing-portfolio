@@ -411,6 +411,66 @@ class App {
         toggleActions: "play reverse play reverse",
       },
     });
+
+    gsap.from(".nav--one", {
+      x: "-100%",
+      opacity: 0,
+      duration: 1,
+      ease: "sine",
+      scrollTrigger: {
+        trigger: ".contact",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
+
+    gsap.from(".nav--two", {
+      x: "-100%",
+      opacity: 0,
+      duration: 1.25,
+      ease: "sine",
+      scrollTrigger: {
+        trigger: ".contact",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
+
+    gsap.from(".nav--three", {
+      x: "-100%",
+      opacity: 0,
+      duration: 1.5,
+      ease: "sine",
+      scrollTrigger: {
+        trigger: ".contact",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
+
+    gsap.from(".nav--four", {
+      x: "-100%",
+      opacity: 0,
+      duration: 1.75,
+      ease: "sine",
+      scrollTrigger: {
+        trigger: ".contact",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
+
+    gsap.from(".nav--five", {
+      x: "-100%",
+      opacity: 0,
+      duration: 2,
+      ease: "sine",
+      scrollTrigger: {
+        trigger: ".contact",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
   }
 
   _footerAnime() {

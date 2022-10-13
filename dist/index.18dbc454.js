@@ -910,6 +910,61 @@ class App {
                 toggleActions: "play reverse play reverse"
             }
         });
+        (0, _gsapDefault.default).from(".nav--one", {
+            x: "-100%",
+            opacity: 0,
+            duration: 1,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 80%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".nav--two", {
+            x: "-100%",
+            opacity: 0,
+            duration: 1.25,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 80%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".nav--three", {
+            x: "-100%",
+            opacity: 0,
+            duration: 1.5,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 80%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".nav--four", {
+            x: "-100%",
+            opacity: 0,
+            duration: 1.75,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 80%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".nav--five", {
+            x: "-100%",
+            opacity: 0,
+            duration: 2,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 80%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
     }
     _footerAnime() {
         (0, _gsapDefault.default).from(".footer--text", {
