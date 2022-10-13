@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 class App {
   constructor() {
     this._smoothScrolling();
+    this._customCursor();
     this._socialsAnime();
     this._navAnime();
     this._heroAnime();
@@ -32,6 +33,34 @@ class App {
     }
 
     requestAnimationFrame(raf);
+  }
+
+  _customCursor() {
+    let innerCursor = document.querySelector(".inner--cursor");
+    let outerCursor = document.querySelector(".outer--cursor");
+    let links = document.querySelectorAll("a");
+
+    document.addEventListener("mousemove", moveCursor);
+
+    function moveCursor(e) {
+      let x = e.clientX;
+      let y = e.clientY;
+
+      innerCursor.style.left = `${x}px`;
+      innerCursor.style.top = `${y}px`;
+      outerCursor.style.left = `${x}px`;
+      outerCursor.style.top = `${y}px`;
+    }
+
+    links.forEach((link) => {
+      link.addEventListener("mouseover", () => {
+        innerCursor.classList.add("grow");
+      });
+
+      link.addEventListener("mouseleave", () => {
+        innerCursor.classList.remove("grow");
+      });
+    });
   }
 
   _socialsAnime() {

@@ -1,0 +1,87 @@
+.projects {
+  grid-template-columns: 1fr;
+  gap: 0;
+  display: grid;
+}
+
+.project {
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  display: grid;
+}
+
+.project--r {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 3rem;
+  padding: 5rem;
+  display: flex;
+}
+
+.project:nth-child(1) .project--r {
+  background-color: #32b8cb;
+}
+
+.project:nth-child(2) .project--r {
+  background-color: #ff768b;
+}
+
+.project:nth-child(3) .project--r {
+  background-color: #6c66b9;
+}
+
+.project--r ::selection {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+hr {
+  border: 1px solid var(--color-light);
+  width: 30%;
+  margin-bottom: 3rem;
+}
+
+.project--links {
+  gap: 5rem;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.project--links .btn {
+  background-color: var(--color-dark);
+}
+
+.project--links .btn:hover {
+  background-color: var(--color-light);
+}
+
+@media screen and (max-width: 1456px) {
+  .project--r {
+    gap: 2rem;
+    padding: 4rem;
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .card--three {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .project--r {
+    padding: 2rem;
+  }
+
+  .project--links {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=index.b90e7673.css.map */
