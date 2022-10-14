@@ -31,6 +31,10 @@
   background-color: #6c66b9;
 }
 
+.project:nth-child(4) .project--r {
+  background-color: #00ad6f;
+}
+
 .project--r ::selection {
   background-color: var(--color-dark);
   color: var(--color-light);
@@ -69,7 +73,8 @@ hr {
     grid-template-columns: 1fr;
   }
 
-  .card--three {
+  .card--three,
+  .card--seven {
     order: 2;
   }
 }

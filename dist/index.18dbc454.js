@@ -782,6 +782,28 @@ class App {
                 toggleActions: "play reverse play reverse"
             }
         });
+        (0, _gsapDefault.default).from(".card--seven", {
+            x: "-100%",
+            opacity: 0,
+            duration: 1,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".card--seven",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
+        (0, _gsapDefault.default).from(".card--eight", {
+            x: "100%",
+            opacity: 0,
+            duration: 1,
+            ease: "sine",
+            scrollTrigger: {
+                trigger: ".card--eight",
+                start: "top 60%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
     }
     _skillsAnime() {
         (0, _gsapDefault.default).from(".title--two", {
